@@ -3,6 +3,11 @@
 require "rubygems"
 require "logger"
 require "git-lfs-s3"
+require "dotenv"
+
+if File.file?(".env")
+  Dotenv.load(".env")
+end
 
 GitLfsS3::Application.set :aws_region, ENV['AWS_REGION']
 GitLfsS3::Application.set :aws_access_key_id, ENV['AWS_ACCESS_KEY_ID']

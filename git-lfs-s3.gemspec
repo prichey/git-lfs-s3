@@ -21,6 +21,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'aws-sdk', '~> 2'
   gem.add_dependency 'sinatra'
   gem.add_dependency 'multi_json'
+  gem.add_dependency 'dotenv'
 
   gem.add_development_dependency 'rake'
 end
